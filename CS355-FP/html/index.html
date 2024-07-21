@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>NBA Event Calendar</title>
+		<style>
+			body, form{
+				margin:20px auto;
+				max-width:800px;
+				overflow-x:hidden;
+			}
+			fieldset{
+				display: flex;
+			}
+			input#team{
+				flex-grow:50;
+				margin: 0 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="search_nba" method="get">
+			<fieldset>
+				<legend>Type NBA Team</legend>
+				<label for="team">Team:</label>
+				<input id="team" name="team" type="text" />
+				<input type="submit" value="Create Calendar" />
+			</fieldset>
+		</form>
+	</body>
+</html>
